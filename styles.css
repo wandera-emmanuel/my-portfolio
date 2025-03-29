@@ -1,4 +1,3 @@
-/* General Styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -26,23 +25,20 @@ body {
     color: #666;
 }
 
-/* Projects Wrapper */
 .projects-wrapper {
     display: flex;
-    flex-wrap: nowrap; /* Ensures horizontal alignment */
+    flex-wrap: nowrap; 
     gap: 20px;
-    overflow-x: auto; /* Adds horizontal scroll if needed */
+    overflow-x: auto; 
     padding: 10px;
 }
 
-/* Project Container */
 .project-container {
     display: flex;
     gap: 10px;
-    width: 600px; /* Adjust container size */
+    width: 600px; 
 }
 
-/* Project Card */
 .project-card {
     background: #fff;
     border-radius: 10px;
@@ -83,7 +79,6 @@ body {
     background-color: #0056b3;
 }
 
-/* Project Description */
 .project-description {
     padding: 10px;
 }
@@ -108,14 +103,6 @@ body {
 .project-description a:hover {
     color: #0056b3;
 }
-/* General Styling */
-body {
-    font-family: Arial, sans-serif;
-    background: linear-gradient(to bottom, #f0f8ff, #e6e6fa);
-    color: #333;
-    margin: 0;
-    padding: 0;
-}
 
 .portfolio-container {
     max-width: 1200px;
@@ -123,7 +110,6 @@ body {
     padding: 20px;
 }
 
-/* About Section */
 .about-section {
     text-align: center;
     background: #f4f4f4;
@@ -140,7 +126,6 @@ body {
     animation: fadeIn 2s ease-in;
 }
 
-/* Animations */
 @keyframes fadeIn {
     0% {
         opacity: 0;
@@ -151,8 +136,6 @@ body {
         transform: scale(1);
     }
 }
-
-/* Buttons */
 .download-btn, .view-live, .view-repo {
     display: inline-block;
     padding: 10px 20px;
@@ -169,7 +152,6 @@ body {
     transform: scale(1.1);
 }
 
-/* Project Section */
 .project-card {
     background: #fff;
     border-radius: 10px;
@@ -186,34 +168,37 @@ body {
     width: 100%;
     border-radius: 10px;
 }
-
-
 .contact-section {
     background: #fff;
-    padding: 20px 30px;
+    padding: 20px;
     border-radius: 10px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
     width: 100%;
-    max-width: 400px;
-    text-align: center;
+    display: flex; 
+    flex-direction:column; 
+    align-items: center;
+    gap: 20px; 
+}
+
+.contact-section h2, 
+.contact-form { 
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
 }
 
 .contact-section h2 {
-    color: #007bff;
-    margin-bottom: 10px;
     font-size: 24px;
-}
-
-.contact-section p {
-    color: #666;
-    margin-bottom: 20px;
-    font-size: 16px;
+    color: #007bff;
+    margin: 0 20px 0 0; 
+    flex: 1; 
 }
 
 .contact-form form {
     display: flex;
     flex-direction: column;
     gap: 15px;
+    flex: 2; 
 }
 
 .contact-form input, .contact-form textarea {
@@ -240,22 +225,18 @@ body {
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-/* Social Icons */
-.social-icons h3 {
-    margin-top: 20px;
-    color: #333;
-    font-size: 18px;
-}
-
 .social-icons {
     display: flex;
-    flex-direction: column;
-    gap: 15px;
-    margin-top: 20px;
+    flex-direction: row; 
+    flex-wrap: wrap; 
+    gap: 15px; 
+    flex: 1; 
+    justify-content: center; 
+    margin-left: auto;
 }
 
 .social-icons a {
-    display: inline-flex;
+    display: flex;
     align-items: center;
     gap: 10px;
     text-decoration: none;
@@ -276,4 +257,6 @@ body {
 .social-icons i {
     font-size: 20px;
 }
-
+ .p {
+    text-align: block;
+ }
