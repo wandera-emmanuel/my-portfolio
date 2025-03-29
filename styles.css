@@ -1,0 +1,128 @@
+.text-block {
+    white-space: pre-wrap; /* Preserves line breaks */
+}
+
+.profile-picture-left {
+    width: 300px; /* Set image size */
+    height: 300px;
+    border-radius: 50%; /* Makes the image circular */
+    float: left; /* Positions the image to the left */
+    margin-right: 20px; /* Adds space between the image and text */
+    border: 3px solid #333; /* Optional: Add a border for style */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* Optional: Shadow for aesthetics */
+}
+
+h1  {
+    text-align: center;
+    color: blue;
+}
+h3 { color: blue;}
+/* Styling the details container */
+details {
+    margin: 20px 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Styling the summary (dropdown header) */
+summary {
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #007bff;
+}
+
+summary:hover {
+    color: #0056b3;
+}
+
+/* Styling the content inside the dropdown */
+details p {
+    margin: 10px 0 0 20px;
+    font-size: 16px;
+    color: #333;
+}
+.intrests {
+    list-style: none;
+    padding: 0;
+}
+.intrests li {
+background: linear-gradient(90deg , rgb(102, 104, 207) 10px , transparent 10px);
+padding: 10px 15px;
+margin: 10px 0;
+border: 1px solid #add;
+border-radius: 8px;
+transition: transform 0.2s, box-shadow 0.2s;
+}
+.intrests li :hover {
+    transform:scale(1.05);
+    box-shadow: 0 4px 8px rgba(o, o, o, o.2);
+}
+.intrests li strong {
+    margin: o;
+    color: #333;
+    font-size: 1.2em;
+}
+
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Contact Section */
+.contact-section {
+    max-width: 600px;
+    margin: 40px auto;
+    text-align:center;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-section h2 {
+    color: #007bff;
+}
+
+.contact-section p {
+    margin-bottom: 20px;
+    color: #666;
+}
+
+/* Social Media Icons */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.icon {
+    font-size: 20px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+    color: #fff;
+    background-color: #007bff;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.icon:hover {
+    background-color: #0056b3;
+    transform: scale(1.1);
+}
+
+.form-group {
+    text-align:center;
+    margin: auto;
+    padding-left:15px;
+
+}
